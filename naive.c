@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define max 100
+#define max 8000
 double A[max][max] = {};
 double B[max][max] = {};
 double C[max][max] = {};
@@ -11,7 +11,7 @@ int main(){
 	for(int i = 0; i < max; i++){
 		for(int j = 0; j < max; j++){
 			for(int k = 0; k < max; k++)
-				C[i][k] += A[i][j]*B[j][k];
+				C[i][j] += A[i][k]*B[k][j];
 		}
 	}
 	for(int i = 0; i < max; i++){

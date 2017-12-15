@@ -1,7 +1,7 @@
 #include "stdio.h"
 
 #define block_size 256
-#define MATRIX_SIZE 1000
+#define MATRIX_SIZE 8000
 
 double A[MATRIX_SIZE][MATRIX_SIZE],
       B[MATRIX_SIZE][MATRIX_SIZE],
