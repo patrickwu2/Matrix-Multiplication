@@ -11,7 +11,7 @@ int main(){
 	for(int i = 0; i < max; i++){
 		for(int j = 0; j < max; j++){
 			for(int k = 0; k < max; k++)
-				C[i][j] += A[i][k]*B[k][j];
+				C[i][k] += A[i][j]*B[j][k];
 		}
 	}
 	for(int i = 0; i < max; i++){
